@@ -1,0 +1,215 @@
+body {
+
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffb6c1, #ffe6ef, #ffd1dc);
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+
+}
+
+
+.hearts {
+
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    animation: float 3s infinite ease-in-out;
+
+}
+
+
+.container {
+
+    background: rgba(255,255,255,0.95);
+    max-width: 600px;
+    padding: 35px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(214,51,132,0.25);
+    border: 3px solid #ff69a6;
+
+}
+
+
+.envelope-box {
+
+    width: 150px;
+    height: 120px;
+    background: #fff0f5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 70px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: bounce 2s infinite;
+
+}
+
+
+#envelope h3 {
+
+    color: #d63384;
+    cursor: pointer;
+    font-size: 22px;
+
+}
+
+
+h1 {
+
+    color: #d63384;
+    font-size: 35px;
+    margin-bottom: 10px;
+
+}
+
+
+h2 {
+
+    color: #8b2252;
+    font-size: 25px;
+
+}
+
+
+.date {
+
+    color: #888;
+    font-style: italic;
+
+}
+
+
+.message {
+
+    text-align: left;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 25px;
+
+}
+
+
+.signature {
+
+    text-align: right;
+    color: #d63384;
+    font-style: italic;
+    font-size: 18px;
+
+}
+
+
+.memory {
+
+    margin-top: 30px;
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 20px;
+    color: #8b2252;
+
+}
+
+
+.music-btn {
+
+    margin-top: 25px;
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+}
+
+
+.music-btn:hover {
+
+    transform: scale(1.05);
+    background: #b52d70;
+
+}
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+#letter {
+
+    animation: appear 1.2s ease;
+
+}
+
+
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes bounce {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+}
+
+
+
+@keyframes float {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+  }
