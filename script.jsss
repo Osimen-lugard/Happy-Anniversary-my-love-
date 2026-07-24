@@ -1,0 +1,126 @@
+const letter = `My Dearest Benedict Lugard Clinton,
+
+Happy Two Months, My Love. ❤️
+
+Today isn't just another day on the calendar.
+
+It's the day I pause to thank God for bringing you into my life.
+
+These past two months have been filled with laughter, lessons, growth, and beautiful memories.
+
+Thank you for choosing me.
+
+Thank you for staying.
+
+Thank you for every smile.
+
+Thank you for every call.
+
+Thank you for being patient with me, even when I overthink.
+
+You have become someone so special to me, and I honestly can't imagine these past two months without you.
+
+We've had misunderstandings, but every single one reminded me that love isn't about never having problems.
+
+It's about choosing each other despite them.
+
+If I had the chance to go back to May 25th...
+
+I'd still choose you.
+
+Again.
+
+And again.
+
+And again.
+
+I pray God continues to protect you, bless your dreams, guide your steps, and strengthen our relationship.
+
+May our love continue to grow with understanding, patience, kindness and peace.
+
+Thank you for making these two months so beautiful.
+
+Happy Two Months, Baby.
+
+Forever Yours,
+
+❤️ Faith ❤️`;
+
+function showPassword() {
+    document.getElementById("welcome").classList.add("hidden");
+    document.getElementById("password").classList.remove("hidden");
+}
+
+function unlockLetter() {
+
+    const name = document.getElementById("passwordInput").value.trim().toLowerCase();
+
+    if(name === "benedict"){
+
+        document.getElementById("password").classList.add("hidden");
+
+        document.getElementById("letter").classList.remove("hidden");
+
+        typeWriter();
+
+    }else{
+
+        alert("Only Benedict can unlock this letter ❤️");
+
+    }
+
+}
+
+let index = 0;
+
+function typeWriter(){
+
+    if(index < letter.length){
+
+        document.getElementById("typing").innerHTML += letter.charAt(index);
+
+        index++;
+
+        setTimeout(typeWriter,30);
+
+    }
+
+}
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML = ["❤️","💕","💖","💗"][Math.floor(Math.random()*4)];
+
+    heart.style.left = Math.random()*100 + "vw";
+
+    heart.style.fontSize = (20 + Math.random()*20) + "px";
+
+    heart.style.animationDuration = (5 + Math.random()*4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },9000);
+
+}
+
+setInterval(createHeart,350);
+
+// Final surprise
+setTimeout(()=>{
+    if(document.getElementById("typing").innerHTML.length >= letter.length){
+
+        setTimeout(()=>{
+
+            alert("❤️ You reached the end... but I hope our story never does.\n\nHappy Two Months, My Love.\n\nI Love You.\n- Faith ❤️");
+
+        },2500);
+
+    }
+
+},45000);
