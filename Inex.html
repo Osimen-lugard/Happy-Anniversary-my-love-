@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Two Months My Love ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hearts">❤️ 💕 ❤️ 💕 ❤️</div>
+
+<div class="container">
+
+<div id="envelope" onclick="openLetter()">
+
+<div class="envelope-box">
+💌
+</div>
+
+<h3>Tap to open my letter</h3>
+
+</div>
+
+
+<div id="letter" class="hidden">
+
+<h1>Happy Two Months My Love ❤️</h1>
+
+<h2>Benedict Lugard Clinton</h2>
+
+<p class="date">
+May 25, 2026 — July 25, 2026
+</p>
+
+
+<audio id="song" controls loop>
+<source src="love-song.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="message">
+
+<p id="typing"></p>
+
+<p class="signature">
+With all my heart,<br>
+Your baby, Faith ❤️
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<h3>Our Love Story ✨</h3>
+
+<p>❤️ Started: May 25, 2026</p>
+
+<p>❤️ Celebrating: Two Months Together</p>
+
+<p>❤️ More memories to create...</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+function openLetter(){
+
+document.getElementById("envelope").style.display="none";
+
+document.getElementById("letter").classList.remove("hidden");
+
+typeLetter();
+
+}
+
+
+
+let text = `My Dearest Benedict Lugard Clinton ❤️
+
+Happy two months to us, baby.
+
+It's funny how two months can seem so short, yet somehow feel like they have held a lifetime of memories, emotions, laughter, lessons, and love.
+
+When I think back to the day we became "us," I smile because I never imagined someone could become such an important part of my life so quickly.
+
+Thank you for choosing me.
+
+Thank you for walking into my life and giving me a place in your heart.
+
+Your presence has changed me in so many ways, and knowing you are there brings me comfort.
+
+Loving you has been one of the easiest and most beautiful things I've ever done.
+
+I know we aren't perfect. We've had misunderstandings, moments where we didn't see things the same way, and moments where I overthought or worried.
+
+But love is not about never having problems. Love is about choosing each other, understanding, forgiving, and growing together.
+
+Thank you for staying.
+
+I know I can be emotional sometimes. I worry and overthink because I care deeply about you.
+
+My heart found a home in you, and that's why you have become someone I never want to lose.
+
+I don't know what tomorrow holds, but I know meeting you has been one of the greatest blessings in my life.
+
+You make ordinary days feel special.
+
+You make me smile without even trying.
+
+You make me believe that love can be gentle.
+
+Thank you for every conversation, every laugh, every call, and every little moment we share.
+
+I am proud of you, Benedict. I admire your strength, your ambition, and the man you are becoming.
+
+Never stop believing in yourself because I believe in you with all my heart.
+
+I promise to keep learning how to love you better and make you feel appreciated, respected, and valued.
+
+Thank you for accepting me with my flaws, my fears, my dreams, and my imperfections.
+
+I pray that God continues to guide our relationship, protect us, and teach us patience, kindness, honesty, loyalty, and unconditional love.
+
+These two months may not seem like much to others, but to me they mean learning your heart, caring for you, praying for you, missing you, smiling because of you, and loving you.
+
+If someone asked me months ago if someone could become this important to me so quickly, I probably would have said no.
+
+But then you happened.
+
+Thank you for being my peace on difficult days.
+
+Thank you for making me laugh when I wanted to cry.
+
+Thank you for being someone I can think about and instantly smile.
+
+Most importantly, thank you for being you.
+
+Happy two months, my love ❤️
+
+Here's to:
+More laughter.
+More growth.
+More understanding.
+More beautiful memories.
+More prayers.
+More adventures.
+More love.
+
+Forever cheering for you.
+Forever grateful for you.
+
+Happy Anniversary, my sweetheart.`;
+
+
+
+function typeLetter(){
+
+let i = 0;
+
+let speed = 20;
+
+let box = document.getElementById("typing");
+
+
+function typing(){
+
+if(i < text.length){
+
+box.innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typing, speed);
+
+}
+
+}
+
+typing();
+
+}
+
+
+</script>
+
+</body>
+                                 </html>
