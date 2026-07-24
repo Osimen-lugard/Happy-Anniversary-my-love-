@@ -1,0 +1,221 @@
+body {
+
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffb6c1, #ffe6ef, #ffd1dc);
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+
+}
+
+
+.hearts {
+
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    animation: float 3s infinite ease-in-out;
+
+}
+
+
+
+.container {
+
+    background: rgba(255,255,255,0.95);
+    max-width: 650px;
+    padding: 40px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(214,51,132,0.25);
+    border: 3px solid #ff69a6;
+
+}
+
+
+
+.envelope-box {
+
+    width: 160px;
+    height: 120px;
+    background: #fff0f5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 75px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: bounce 2s infinite;
+
+}
+
+
+
+#envelope h3 {
+
+    color: #d63384;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+
+
+h1 {
+
+    color: #d63384;
+    font-size: 38px;
+
+}
+
+
+
+h2 {
+
+    color: #8b2252;
+    font-size: 25px;
+
+}
+
+
+
+.date {
+
+    color: #888;
+    font-style: italic;
+    margin-bottom: 20px;
+
+}
+
+
+
+audio {
+
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+
+
+.message {
+
+    text-align: left;
+    margin-top: 20px;
+
+}
+
+
+
+#typing {
+
+    white-space: pre-line;
+    color: #444;
+    font-size: 17px;
+    line-height: 1.9;
+
+}
+
+
+
+.signature {
+
+    text-align: right;
+    color: #d63384;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 30px;
+
+}
+
+
+
+.memory {
+
+    margin-top: 35px;
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 25px;
+    color: #8b2252;
+
+}
+
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+
+#letter {
+
+    animation: appear 1.5s ease;
+
+}
+
+
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes bounce {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+}
+
+
+
+@keyframes float {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+  }
